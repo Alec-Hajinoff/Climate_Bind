@@ -1,2 +1,1 @@
-Text.
-Text..
+Climate Bind is free to use peer to peer insurance web application offering cover against damage to residential buildings arising from severe weather events.  
