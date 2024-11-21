@@ -33,19 +33,20 @@
                 <form class="row g-2">
                     <div class="form-group">
                         <label for="contactForm">Contact form</label>
-                        <input type="text" class="form-control" id="yourName" placeholder="Your name">
+                        <input type="text" class="form-control" id="yourName" required placeholder="Your name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="yourEmail" placeholder="Email address">
+                        <input type="email" class="form-control" id="yourEmail" required placeholder="Email address">
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control" id="yourNumber" placeholder="Phone number">
+                        <input type="number" class="form-control" id="yourNumber" required placeholder="Phone number">
                     </div>
                     <div class="form-group">
-                        <textarea type="text" class="form-control" id="yourComments" rows="4"
+                        <textarea type="text" class="form-control" id="yourComments" required rows="4"
                             placeholder="Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success" id="liveAlertBtn">Submit</button>
+                    <div id="liveAlertPlaceholder"></div>
                 </form>
             </div>
         </div>
@@ -57,6 +58,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script type="application/javascript" src="script.js"></script>
 </body>
 
 </html>
