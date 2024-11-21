@@ -11,10 +11,9 @@ const appendAlert = (message, type) => {
     alertPlaceholder.append(wrapper)
 }
 
-//const inputsFilled = document.getElementByClassName('form-control')
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
-        appendAlert('Thank you, we received your message and will be in touch soon!', 'success')
-    })
-}
+            appendAlert('Thank you, we received your message and will be in touch soon!', 'success')
+        })
+    }
