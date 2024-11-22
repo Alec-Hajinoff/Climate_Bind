@@ -10,10 +10,42 @@ const appendAlert = (message, type) => {
 
     alertPlaceholder.append(wrapper)
 }
-
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
+console.log("zero");
+const alertTrigger = document.getElementById('liveAlertBtn');
+console.log("zeroOne");
+//const inputs = document.querySelectorAll('input');
+const inputs = document.getElementById('yourName');
+console.log("zeroTwo");
+console.log(inputs);
+if (inputs.value !== "") {
+    console.log("one"); 
     alertTrigger.addEventListener('click', () => {
+        appendAlert('Thank you, we received your message and will be in touch soon!', 'success')
+    });
+    console.log("two");
+} else {
+    console.log("three");
+    alertTrigger.addEventListener('click', () => {
+        appendAlert('We need more information, please!', 'success')
+    })
+    console.log("four"); 
+}
+
+/*
+const alertTrigger = document.getElementById('liveAlertBtn');
+const inputs = document.querySelectorAll('input.form-control');
+inputs.forEach(input => {
+    if (input.value !== '') {
+        alertTrigger.addEventListener('click', () => {
             appendAlert('Thank you, we received your message and will be in touch soon!', 'success')
-        })
-    }
+    })
+}
+});
+*/
+
+/*
+if ((alertTrigger) && (inputs !== false)) {
+    alertTrigger.addEventListener('click', () => {
+        appendAlert('Thank you, we received your message and will be in touch soon!', 'success')
+    })
+} */
