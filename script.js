@@ -13,14 +13,12 @@ const appendAlert = (message, type) => {
     ].join('')
 }
 
-
 const nameInput = document.getElementById('yourName');
 const emailInput = document.getElementById('yourEmail');
 const yourNumber = document.getElementById('yourNumber');
 const yourComments = document.getElementById('yourComments');
 
 function validateForm() {
-
 
     if (nameInput.value === '') {
         return false;
@@ -50,6 +48,6 @@ alertTrigger.addEventListener('click', (event) => {
         event.preventDefault();
 
         appendAlert('Thank you, we received your message and we will be in touch soon!', 'success');
+        document.getElementById("myForm").reset();
     }
 });
-

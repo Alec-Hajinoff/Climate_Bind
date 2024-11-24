@@ -30,13 +30,13 @@
                     help you achieve your goals.</p>
             </div>
             <div class="col-4">
-                <form class="row g-2" id="myForm">
+                <form class="row g-2" id="myForm" method="POST" action="form_capture.php">
                     <div class="form-group">
                         <label for="contactForm">Contact form</label>
-                        <input type="text" class="form-control" id="yourName" required placeholder="Your name">
+                        <input type="text" pattern="[a-zA-Z ]+" class="form-control" id="yourName" name="fname" required placeholder="Your name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="yourEmail" required placeholder="Email address">
+                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" class="form-control" id="yourEmail" required placeholder="Email address">
                     </div>
                     <div class="form-group">
                         <input type="number" class="form-control" id="yourNumber" required placeholder="Phone number">
